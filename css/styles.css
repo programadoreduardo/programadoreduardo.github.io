@@ -58,7 +58,7 @@
 }
 
 #bio-image{
-    width: 180px;
+    width: 190px;
     height: 190px;
     border-radius: 50%;
     margin-bottom: 25px;
@@ -104,4 +104,83 @@
 #social-container li a{
     color: var(--main-color);
     font-size: 30px;
+}
+
+/* About container */
+#name {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+#title{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.description{
+    max-width: 75%;
+    margin-bottom: 10px;
+}
+
+#btn-projects{
+    font-weight: bold;
+    font-size: 16px;
+    color:var(--main-text-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition:.5s;
+    margin: 25px 0;
+    padding: 12px 10px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+}
+
+#btn-projects ion-icon,
+#btn-projects span {
+    flex: 1 1 0;
+}
+
+#btn-projects ion-icon{
+    font-size: 20px;
+    max-width: 20px;
+}
+
+#btn-hover{
+    background-color: transparent;
+}
+
+#skill-section-title{
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#skils-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+#skills-box{
+    flex: 1 1 33%;
+    max-width: 33%;
+    margin-bottom: 35px;
+}
+
+#skills-title{
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid var(--main-color);
+}
+
+#skills-box i {
+    font-size: 45px;
+    margin-right: 10px;
 }
