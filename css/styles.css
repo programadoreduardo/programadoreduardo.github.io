@@ -114,13 +114,14 @@ margin-bottom: 15px;
 
 #title{
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-weight: bold;
 }
 
-.description{
+#description{
     max-width: 75%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    
 }
 
 #btn-projects{
@@ -160,21 +161,30 @@ margin-bottom: 15px;
     font-size: 32px;
 }
 
+#tecnology{
+    margin-top: 15px;
+}
+
 #skils-container{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 #skills-box{
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+#skills-box p{
+    margin-top: 25px;
 }
 
 #skills-title{
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: bold;
     padding-left: 10px;
     border-left: 5px solid var(--main-color);
@@ -183,4 +193,52 @@ margin-bottom: 15px;
 #skills-box i {
     font-size: 45px;
     margin-right: 10px;
+}
+
+/* mobile */
+@media(max-width:500px){
+    #container{
+        flex-direction: column;
+    }
+
+    #bio-container{
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    #bio-container h2{
+        display: none;
+    }
+
+    bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container{
+        text-align: center;
+        padding: 30px;
+    }
+
+    #about-container .description{
+        margin: 1px auto;
+        max-width: 100%;
+        line-height: 26px;
+    }
+
+    #btn-projects {
+        margin: 20px auto;
+    }
+
+    #skills-box{
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    #skills-box i {
+        font-size: 60px;
+    }
+
 }
