@@ -120,16 +120,60 @@ margin-bottom: 15px;
 
 #description{
     max-width: 75%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     
 }
+
+/*#btn-projects {
+    padding: 18px 30px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #3f3f3f;
+    border-radius: 5px;
+    min-width: 200px;
+    color: var(--main-text-color);
+    z-index: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+#btn-projects::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+     left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #ffffff75, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+    (skew(-20deg));
+}
+*/
+#btn-projects:hover::before{
+    transform: translateX(300px)
+                skew(-20deg);
+}
+
+#btn-projects:hover{
+    background: #067432;
+} 
+
+
 
 #btn-projects{
     font-weight: bold;
     font-size: 16px;
     color:var(--main-text-color);
     background-color: var(--main-color);
-    border: 2px solid var(--main-color);
+    /* border: 2px solid var(--main-color); */
     border-radius: 5px;
     text-decoration: none;
     transition:.5s;
@@ -161,23 +205,16 @@ margin-bottom: 15px;
     font-size: 32px;
 }
 
-#tecnology{
-    margin-top: 15px;
-}
-
 #skills-container{
     display: flex;
      flex-wrap: wrap; 
      margin-top: 25px; 
 }
 
-#skills-box {
+ #skills-box {
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 35px;
-}
-
-#skills-box p{
     margin-top: 25px;
 }
 
@@ -210,9 +247,9 @@ margin-bottom: 15px;
         display: none;
     }
 
-    bio-container p {
+    #bio-container p {
         max-width: 60%;
-        margin: 10px auto;
+        margin: 5px auto;
     }
 
     #about-container{
@@ -220,8 +257,8 @@ margin-bottom: 15px;
         padding: 30px;
     }
 
-    #about-container .description{
-        margin: 1px auto;
+    #about-container #description{
+        margin: 10px auto;
         max-width: 100%;
         line-height: 26px;
     }
@@ -231,6 +268,7 @@ margin-bottom: 15px;
     }
 
     #skills-box{
+        flex: 1 1 100%;
         max-width: 100%;
         margin-bottom: 40px;
         text-align: left;
